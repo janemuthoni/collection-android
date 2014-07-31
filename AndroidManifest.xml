@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mycollection"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ListScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdditionScreenActivity"
+            android:label="@string/title_activity_addition" >
+        </activity>
+        <activity
+            android:name=".SubtractionActivity"
+            android:label="@string/title_activity_subtraction" >
+        </activity>
+        <activity
+            android:name=".LoginScreenActivity"
+            android:label="@string/title_activity_login_screen" >
+        </activity>
+        <activity
+            android:name=".IncreamentActivity"
+            android:label="@string/title_activity_increament" >
+        </activity>
+        <activity
+            android:name=".ButtonToastActivity"
+            android:label="@string/title_activity_button_toast" >
+        </activity>
+        <activity
+            android:name=".CountriesActivity"
+            android:label="@string/title_activity_countries" >
+        </activity>
+        <activity
+            android:name=".DecreamentActivity"
+            android:label="@string/title_activity_increament" >
+        </activity>
+        <activity
+            android:name=".WebviewActivity"
+            android:label="@string/title_activity_webview" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greengrass">
+
+    <TextView
+        android:id="@+id/enternumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TextViewenternumber" />
+    
+    <EditText
+        android:id="@+id/etnumberone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number" />
+    
+
+    <Button
+        android:id="@+id/buttondecreament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="109dp"
+        android:text="@string/buttondecreament" />
+
+    
+    <TextView
+        android:id="@+id/Results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonincreament"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="47dp"
+        android:text="@string/Result" />
+
+    <Button
+        android:id="@+id/buttonincreament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttondecreament"
+        android:layout_alignParentLeft="true"
+        android:text="@string/buttonincreament" />
+
+</RelativeLayout>

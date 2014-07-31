@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/violet">
+ <TextView
+        android:id="@+id/numberone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="40dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/lightgrey"
+        android:text="@string/TextViewnumberone"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    
+    <EditText
+        android:id="@+id/etnumberone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numbertwo"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/numbertwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/numberone"
+        android:layout_margin="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/lightgrey"
+        android:text="@string/TextViewnumbertwo"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    
+    <EditText
+        android:id="@+id/etnumbertwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/numbertwo"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/buttonadd"
+        android:layout_marginBottom="37dp"
+        android:text="@string/ButtonBack" />
+
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonback"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:text="@string/ButtonAdd" />
+
+    <Button
+        android:id="@+id/buttonsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonadd"
+        android:layout_alignBottom="@+id/buttonadd"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Buttonsub" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etnumbertwo"
+        android:layout_marginTop="34dp"
+        android:background="@color/white"
+        android:text="@string/Result"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    
+</RelativeLayout>

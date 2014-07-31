@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/cyan">
+<TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username" />  
+<requestFocus />
+
+   <EditText
+       android:id="@+id/etusername"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:ems="10"
+       android:inputType="textPersonName" />
+
+   <TextView
+       android:id="@+id/textviewusername"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/password" />
+
+   <EditText
+       android:id="@+id/etpassword"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:ems="10"
+       android:inputType="textPassword" />
+
+   <CheckBox
+       android:id="@+id/checkbox"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/show" />
+
+   <Button
+       android:id="@+id/buttonToast"
+       android:layout_width="180dp"
+       android:layout_height="wrap_content"
+       android:text="@string/buttonToast" />
+
+   <Button
+       android:id="@+id/buttonBack"
+       android:layout_width="112dp"
+       android:layout_height="wrap_content"
+       android:text="@string/ButtonBack" />
+
+ </LinearLayout>
