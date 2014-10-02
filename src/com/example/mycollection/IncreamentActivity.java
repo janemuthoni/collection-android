@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 
 public class IncreamentActivity extends Activity implements OnClickListener {
-	TextView tventernumber,Result ,tv;
+	TextView tventernumber,tvResult ,tv;
 	Button   btnincreament,btndecreament;
 	EditText etnumberone;
 	int value;
@@ -22,35 +22,40 @@ public class IncreamentActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.increament);
 		
 		etnumberone =(EditText)findViewById(R.id.etnumberone);
-		tventernumber = (TextView)findViewById(R.id.enternumber);
+		tvResult =(TextView)findViewById(R.id.tvResult);
 		
 		btnincreament =(Button)findViewById(R.id.buttonincreament);
 		btnincreament.setOnClickListener(this);
 		
 		btndecreament =(Button)findViewById(R.id.buttondecreament);
 		btndecreament.setOnClickListener(this);
-			}
+	}
+
 
 	@Override
 	public void onClick(View v) {
-		boolean showText = true;
+		int value = 0;
 		switch (v.getId()) {
 		case R.id.buttonincreament:
-			
-			value = Integer.parseInt(etnumberone.getText().toString());
-			if(showText){
-			 value ++;
-			 tvResult.setText(String.valueOf("Result: " + value));
-			break;
-			 case R.id.buttondecreament:
-				 
+		value = Integer.parseInt(etnumberone.getText().toString());
+		value++; 
+		etnumberone.setText("" + value); // this is to update text
+		tvResult.setText("The result is:" + value); //update label
+		break;
+		case R.id.buttondecreament:
+
+		value = Integer.parseInt(etnumberone.getText().toString());
+		value--;
+		etnumberone.setText("" + value); // update text
+		tvResult.setText("The results:" + value); // update label
+		break;
 
 		default:
-			break;
+		break;
 		}
 	
-		
 	}
-
 }
+	
+
 	

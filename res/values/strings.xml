@@ -30,5 +30,8 @@
     <string name="title_activity_addition">AdditionActivity</string>
     <string name="title_activity_subtraction">SubtractionActivity</string>
     <string name="title_activity_webview">WebviewActivity</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
 
 </resources>

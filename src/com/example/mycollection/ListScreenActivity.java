@@ -55,25 +55,22 @@ public class ListScreenActivity extends Activity implements OnItemClickListener 
              startActivity(new Intent(getApplicationContext(),LoginScreenActivity.class));
             Toast.makeText(getApplicationContext(), "welcome to login screen ", Toast.LENGTH_LONG).show();
          break;
-		case 3:
-			startActivity(new Intent(getApplicationContext(),DecrementActivity.class));
-			Toast.makeText(getApplicationContext(), "welcome to Decreamemt ", Toast.LENGTH_LONG).show();
 			
-		case 4:
+		case 3:
 			
 			startActivity(new Intent(getApplicationContext(),IncreamentActivity.class));
 			Toast.makeText(getApplicationContext(), "welcome to Decreamemt ", Toast.LENGTH_LONG).show();
 			
-		case  5:
+		case  4:
 			startActivity(new Intent(getApplicationContext(),ButtonToastActivity.class));
 			Toast.makeText(getApplicationContext(), "welcome to Button Toast", Toast.LENGTH_LONG).show();
 			
 			break;
-		case 6:
+		case 5:
 			startActivity(new Intent(getApplicationContext(),CountriesActivity.class));
 			Toast.makeText(getApplicationContext(), "welcome to countries", Toast.LENGTH_LONG).show();
 		
-		case  7:
+		case  6:
 			startActivity(new Intent(getApplicationContext(),WebviewActivity.class));
          
 		default:

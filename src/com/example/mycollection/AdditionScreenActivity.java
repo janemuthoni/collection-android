@@ -83,7 +83,7 @@ public void onClick(View v) {
 		
  break;
 	case R.id.buttonback:
-		//Intenting the 
+		//Inventing the buttonback.
 		startActivity(new Intent(getApplicationContext(), ListScreenActivity.class));
 		Toast.makeText(getApplicationContext(), "enjoy", Toast.LENGTH_SHORT).show();
 

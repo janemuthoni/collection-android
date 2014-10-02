@@ -54,6 +54,22 @@
             android:name=".WebviewActivity"
             android:label="@string/title_activity_webview" >
         </activity>
+        <activity
+            android:name=".TabsActivity"
+            android:label="@string/title_activity_tabs" >
+        </activity>
+        <activity
+            android:name=".ContactActivity"
+            android:label="@string/title_activity_contact" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
     </application>
 
 </manifest>
